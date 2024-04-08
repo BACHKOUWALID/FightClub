@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/fight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Email Input -->
+    <TextView
+        android:id="@+id/textViewEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="#fb1a4f"
+        android:textSize="16sp"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_marginTop="0dp"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:hint="email@example.com"
+        android:textColorHint="#35424a"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/textViewEmailLabel"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:paddingLeft="0dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_below="@id/editTextEmail"/>
+
+
+    <!-- Password Input -->
+    <TextView
+        android:id="@+id/textViewPasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#fb1a4f"
+        android:textSize="16sp"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:hint="password"
+        android:textColorHint="#35424a"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/textViewPasswordLabel"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+         />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_below="@id/editTextPassword"/>
+
+    <!-- Login Buttons -->
+    <Button
+        android:id="@+id/buttonEmailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounder_border"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/TextSocialLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="or use one of your social media accounts"
+        android:layout_below="@+id/buttonEmailLogin"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:textColor="#35424a"
+        android:textSize="16dp"
+    />
+    <Button
+        android:id="@+id/Twitter"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Twitter"
+        android:layout_below="@id/TextSocialLogin"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_border_twitter"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/Facebook"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/TextSocialLogin"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounder_border_facebook"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_marginStart="200dp"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:textStyle="bold"
+        android:layout_below="@id/Twitter"
+        android:layout_marginTop="32dp"
+        android:background="#000000"
+        android:textColor="#35424a"
+        android:fontFamily="sans-serif"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/Facebook"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounder_border"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_marginStart="200dp"
+        android:textAllCaps="false"
+        />
+</RelativeLayout>
+

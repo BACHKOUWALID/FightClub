@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/title_signup"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Sign Up"
+        android:textSize="32dp"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        />
+
+    <!-- Email Input -->
+    <TextView
+        android:id="@+id/textViewEmailLabelregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="#fb1a4f"
+        android:textSize="16sp"
+        android:layout_below="@id/title_signup"
+        android:layout_marginTop="0dp"/>
+
+    <EditText
+        android:id="@+id/editTextEmailregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:hint="email@example.com"
+        android:textColorHint="#35424a"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/textViewEmailLabelregister"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:paddingLeft="0dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_below="@id/editTextEmailregister"/>
+
+
+    <!-- Password Input -->
+    <TextView
+        android:id="@+id/TextViewusernameLabelregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textColor="#fb1a4f"
+        android:textSize="16sp"
+        android:layout_below="@id/editTextEmailregister"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/editTextusernameregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:hint="username"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#35424a"
+        android:layout_below="@id/TextViewusernameLabelregister"
+        android:layout_marginTop="8dp"
+        android:padding="10dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_below="@id/editTextusernameregister"/>
+    <TextView
+        android:id="@+id/TextViewpasswordLabelregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#fb1a4f"
+        android:textSize="16sp"
+        android:layout_below="@id/editTextusernameregister"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextPasswordregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#35424a"
+        android:layout_below="@id/TextViewpasswordLabelregister"
+        android:layout_marginTop="8dp"
+        android:padding="10dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_below="@id/editTextPasswordregister"/>
+    <CheckBox
+        android:id="@+id/checkBoxTerms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="I agree to the Terms of Services and Privacy Policy."
+        android:layout_below="@id/editTextPasswordregister"
+        android:textColor="#FFFFFF"
+        android:checked="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Login Buttons -->
+    <Button
+        android:id="@+id/buttonEmailregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:layout_below="@id/checkBoxTerms"
+        android:background="@drawable/rounder_border"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
